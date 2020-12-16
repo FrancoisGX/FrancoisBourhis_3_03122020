@@ -1,15 +1,5 @@
-footer {
-  background-color: #404040;
-  color: white;
-}
-footer a {
-  text-decoration: none;
-  color: white;
-}
-
 body {
-  margin: 0;
-  padding: 0;
+  margin: auto;
 }
 
 header {
@@ -17,7 +7,7 @@ header {
   z-index: auto;
   padding-top: 3%;
   padding-bottom: 3%;
-  width: 100.1%;
+  width: 100%;
   text-align: center;
   border-bottom: 0px solid #FFFFFF;
   box-shadow: 0px 0px 10px #B4B4B4;
@@ -82,12 +72,12 @@ header #logo img {
   border-radius: 1.2em;
   font-size: 1.2em;
   margin-bottom: 5%;
-  margin-left: 5%;
+  margin-left: 7.5%;
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 0%;
   padding-bottom: 0%;
-  width: 90%;
+  width: 85%;
   border: none;
   box-shadow: 5px 5px 10px #B4B4B4;
   outline: 0;
@@ -117,15 +107,17 @@ header #logo img {
   background-color: #F2F2F2;
 }
 
-#titre_restau {
-  font-size: 2em;
+#titre {
+  margin-top: 0%;
+  margin-left: 5%;
+  padding-top: 10%;
+  font-size: 1.8em;
 }
 
 .conteneur {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 10%;
 }
 
 .restau_img1 {
@@ -152,7 +144,7 @@ header #logo img {
   position: relative;
   display: flex;
   width: 90%;
-  max-width: 400;
+  max-width: 400px;
   height: 250px;
   border-radius: 25px;
   margin-bottom: 5%;
@@ -204,6 +196,38 @@ header #logo img {
   font-size: 1.1em;
   font-weight: normal;
   margin-top: -2%;
+}
+
+footer {
+  background-color: #404040;
+  padding-top: 0%;
+  padding-bottom: 5%;
+}
+footer img {
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-bottom: 2.5%;
+  width: 25%;
+  -webkit-filter: invert(100%);
+}
+footer ul {
+  margin: 0%;
+  padding-left: 5%;
+}
+
+footer li {
+  list-style: none;
+  padding-bottom: 1.5%;
+}
+footer li i {
+  width: 25px;
+  font-size: 0.8em;
+  color: white;
+}
+footer li a {
+  text-decoration: none;
+  color: white;
+  list-style: none;
 }
 
 /*# sourceMappingURL=style.css.map */
