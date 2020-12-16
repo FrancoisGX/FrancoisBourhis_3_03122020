@@ -3,9 +3,27 @@
 @import "menu_restau";
 @import "image_restau_bloc";
 
+@font-face
+{
+	font-family: "roboto";  
+	src:url("./police/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face
+{
+	font-family: "Shrikhand";  
+	src:url("./police/Shrikhand-Regular.ttf") format("truetype");
+}
+
 body{
 	margin:auto;
 	position: relative;
+	h2,h3,h4{
+		font-family: "roboto";
+	}
+	h1{
+		font-family: "Shrikhand";
+	}
 }
 
 header{
@@ -57,13 +75,16 @@ header{
 #localisation{
 	display:flex;
 	justify-content: center;
-	font-size: 0.8em;
 	padding-right: 10%;
 	background-color: $background-color-localisation;
+	h2{
+		font-weight: lighter;
+		font-size: 1.2em;
+	}
 	i{
 		padding-right: 5%;
 		padding-top: 4%;
-		font-size: 1.5em;
+		font-size: 1.4em;
 	}
 }
 
@@ -197,14 +218,16 @@ header{
 }
 
 .fa-heart{
-	-webkit-text-fill-color:transparent;
 	-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: $black;
+	color: transparent;
+	transition-duration: 0.5s;
+	background-image: initial;
 	&:hover{
 		background-image: -webkit-linear-gradient($second-color,$primaire-color);
 		color:transparent;
 		-webkit-background-clip: text;
-		-webkit-text-stroke-color:transparent;
+		-webkit-text-stroke-color:$white;
 		background-clip: text;
 	}
 }
@@ -219,7 +242,7 @@ header{
 	h2{
 		margin-left: 20px;
 		font-size: 1.2em;
-		margin-top: 2%;
+		margin-top: 4%;
 	}
 	h3{
 		margin-left: 20px;
@@ -249,6 +272,7 @@ footer{
 footer li{
 	list-style: none;
 	padding-bottom: 1.5%;
+	font-family: "roboto";
 	i{
 		width: 25px;
 		font-size: 0.8em;

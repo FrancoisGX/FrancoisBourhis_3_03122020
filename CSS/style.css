@@ -11,7 +11,7 @@
   margin-top: 2.5%;
   margin-bottom: 2%;
   padding-top: 5%;
-  font-size: 2.3em;
+  font-size: 1.5em;
 }
 .menu #fav {
   position: absolute;
@@ -30,6 +30,7 @@ article h2 {
   margin-left: 6%;
   border-bottom: 0.2em solid #99E2D0;
   width: 10%;
+  font-weight: normal;
 }
 
 .section_plat {
@@ -39,7 +40,6 @@ article h2 {
   margin-left: 5%;
   margin-right: 5%;
   width: 90%;
-  height: auto;
   border: none;
   background-color: white;
   color: black;
@@ -47,32 +47,53 @@ article h2 {
   outline: 0;
   cursor: pointer;
   display: flex;
-  position: relative;
 }
 .section_plat:hover {
   background-color: none;
 }
 .section_plat #groupe_text {
+  position: relative;
   margin-left: 2.5%;
-  padding: 0;
-  width: 80%;
+  width: 72%;
 }
 .section_plat #prix h4 {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  font-size: 0.8em;
+  margin-left: 15%;
+  font-weight: lighter;
+}
+
+.effet {
+  animation-name: slide;
+  animation-duration: 1s;
+}
+
+@keyframes slide {
+  from {
+    opacity: 0%;
+    margin-top: -25px;
+  }
+  to {
+    opacity: 100%;
+    margin-top: 0px;
+  }
+}
+#prix {
+  position: relative;
   margin-right: 5%;
-  margin-bottom: 2.5%;
-  margin-top: 0%;
+  margin-left: 15%;
 }
 
 #groupe_text h3 {
-  margin: 2%;
-  font-size: 1em;
+  margin-top: 3%;
+  margin-bottom: 1%;
+  font-size: 0.95em;
+  font-weight: bold;
 }
 #groupe_text h4 {
-  margin: 2%;
-  font-size: 0.8em;
+  margin-top: 1%;
+  margin-bottom: 0%;
+  font-size: 0.75em;
+  font-weight: lighter;
 }
 
 #bouton_commande {
@@ -90,9 +111,46 @@ article h2 {
   font-size: 1em;
 }
 
+.effet_valid {
+  background-color: #99E2D0;
+  color: white;
+  position: relative;
+  width: 25%;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  display: none;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 1000ms;
+}
+.effet_valid i {
+  padding-top: 30%;
+  padding-left: 35%;
+}
+
+.section_plat:hover .effet_valid {
+  display: block;
+  margin: 0;
+  transform: scale(1);
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url("./police/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url("./police/Shrikhand-Regular.ttf") format("truetype");
+}
 body {
   margin: auto;
   position: relative;
+}
+body h2, body h3, body h4 {
+  font-family: "roboto";
+}
+body h1 {
+  font-family: "Shrikhand";
 }
 
 header {
@@ -152,14 +210,17 @@ header i {
 #localisation {
   display: flex;
   justify-content: center;
-  font-size: 0.8em;
   padding-right: 10%;
   background-color: #ECECEC;
+}
+#localisation h2 {
+  font-weight: lighter;
+  font-size: 1.2em;
 }
 #localisation i {
   padding-right: 5%;
   padding-top: 4%;
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 
 #info {
@@ -206,7 +267,6 @@ header i {
   margin-left: 5%;
   margin-right: 5%;
   width: 90%;
-  height: auto;
   border: none;
   background-color: #F2F2F2;
   color: black;
@@ -313,15 +373,17 @@ header i {
 }
 
 .fa-heart {
-  -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+  color: transparent;
+  transition-duration: 0.5s;
+  background-image: initial;
 }
 .fa-heart:hover {
   background-image: -webkit-linear-gradient(#FF79DA, #9356DC);
   color: transparent;
   -webkit-background-clip: text;
-  -webkit-text-stroke-color: transparent;
+  -webkit-text-stroke-color: white;
   background-clip: text;
 }
 
@@ -336,7 +398,7 @@ header i {
 .texte_restau h2 {
   margin-left: 20px;
   font-size: 1.2em;
-  margin-top: 2%;
+  margin-top: 4%;
 }
 .texte_restau h3 {
   margin-left: 20px;
@@ -365,6 +427,7 @@ footer ul {
 footer li {
   list-style: none;
   padding-bottom: 1.5%;
+  font-family: "roboto";
 }
 footer li i {
   width: 25px;
