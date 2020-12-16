@@ -1,0 +1,40 @@
+@mixin bouton_type ($color, $background-color, $hover-color){
+	border-radius: 1em;
+	font-size: 1.2em;
+	margin-bottom: 5%;
+	margin-left: 5%;
+	margin-right: 5%;
+	width: 90%;
+	border:none;
+	background-color:$background-color;
+	color: $color;
+	box-shadow: 2px 2px 10px #B4B4B4;
+	outline:0;
+	cursor: pointer;
+	&:hover{
+		background-color: $hover-color;
+	}
+}
+
+@mixin bouton_degrade {
+	border-radius: 5em;
+	background-image:linear-gradient($second-color,$primaire-color);
+	color: $white;
+	border:none;
+	box-shadow: 5px 5px 10px #B4B4B4;
+	outline:0;
+	cursor: pointer;
+}
+
+@mixin div_valid {
+	background-color: $terciaire-color;
+	color: $white;
+	position:relative;
+	width: 25%;
+	border-top-right-radius: 1em;
+	border-bottom-right-radius: 1em;
+	i{
+		padding-top: 30%;
+		padding-left: 35%;
+	}
+}
