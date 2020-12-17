@@ -28,7 +28,6 @@ body{
 
 header{
 	position: relative;
-	z-index: auto;
 	width: 100%;
 	border-bottom:0px solid #FFFFFF;
 	box-shadow: 0px 0px 10px #B4B4B4;
@@ -285,3 +284,49 @@ footer li{
 	}
 }
 
+.loader_conteneur{
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	background-color: rgba(250, 250, 250, 0.8);
+	animation: show 3s;
+	z-index: -1;
+	.loader {
+		border: 16px solid rgb(199, 198, 198);
+		border-top: 16px solid $terciaire-color;
+		background-image:linear-gradient($second-color,$primaire-color);
+		border-radius: 50%;
+		width: 120px;
+		height: 120px;
+		animation: spin 3s;
+		margin-left: 32%;
+		margin-top: 65%;
+	  }
+}
+
+  @keyframes show{
+	0%{
+		z-index:100 ;
+		opacity: 1;
+	}
+	80%{
+		z-index:100 ;
+		opacity: 1;
+	}
+	100%{
+		z-index:100 ;
+		opacity: 0;
+	}
+  }
+
+  @keyframes spin {
+	0% {
+		transform: rotate(0deg); 
+	}
+	100%{ 
+		transform: rotate(1080deg); 
+	}
+  }
