@@ -18,7 +18,7 @@
 body{
 	margin:auto;
 	position: relative;
-	h2,h3,h4{
+	h2,h3,h4,p{
 		font-family: "roboto";
 	}
 	h1{
@@ -296,8 +296,7 @@ footer li{
 	z-index: -1;
 	.loader {
 		border: 16px solid rgb(199, 198, 198);
-		border-top: 16px solid $terciaire-color;
-		background-image:linear-gradient($second-color,$primaire-color);
+		border-top: 16px solid $terciaire-color;		
 		border-radius: 50%;
 		width: 120px;
 		height: 120px;

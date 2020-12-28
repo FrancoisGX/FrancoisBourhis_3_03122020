@@ -29,11 +29,11 @@
 @mixin div_valid {
 	background-color: $terciaire-color;
 	color: $white;
-	width: 60%;
+	width: 100%;
 	border-top-right-radius: 1em;
 	border-bottom-right-radius: 1em;
 	i{
-		margin-top: 35%;
+		margin-top: 45%;
 		margin-left: 30%;
 	}
 }
