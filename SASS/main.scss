@@ -1,7 +1,6 @@
 @import "variable";
 @import "bouton_type";
 @import "menu_restau";
-@import "image_restau_bloc";
 
 @font-face
 {
@@ -31,7 +30,7 @@ header{
 	width: 100%;
 	border-bottom:0px solid #FFFFFF;
 	box-shadow: 0px 0px 10px #B4B4B4;
-	#logo img{
+	.logo img{
 		width: 50%;
 		margin-left:25%;
 		margin-top: 2.5%;
@@ -47,31 +46,7 @@ header{
 	}
 }
 
-#image_restau1{
-	@include image_dimension;
-	background-image: url(images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-	background-position: 0% 0%;
-}
-
-#image_restau2{
-	@include image_dimension;
-	background-image: url(images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
-	background-position: 0%;
-}
-
-#image_restau3{
-	@include image_dimension;
-	background-image: url(images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-	background-position: 0% 0%;
-}
-
-#image_restau4{
-	@include image_dimension;
-	background-image: url(images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
-	background-position: 0% 0%;
-}
-
-#localisation{
+.localisation{
 	display:flex;
 	justify-content: center;
 	padding-right: 10%;
@@ -87,7 +62,7 @@ header{
 	}
 }
 
-#info{
+.info{
 	padding-top: 5%;
 	text-align: center;
 	background-color: $background-color-general;
@@ -105,7 +80,7 @@ header{
 	}
 }
 
-#bouton_explo{
+.bouton_explo{
 	@include bouton_degrade;
 	font-size: 1.2em;
 	margin-top: 5%;
@@ -114,8 +89,11 @@ header{
 	padding-right: 5%;
 }
 
-#titre_fonctio{
-	font-size: 1.5em;
+.titre{
+	margin-top: 0%;
+	margin-left: 5%;
+	padding-top: 10%;
+	font-size: 1.8em;
 }
 
 .fonctio{
@@ -152,15 +130,8 @@ header{
 	color: $white;
 }
 
-#restaurants{
+.restaurants{
 	background-color: $background-color-general;
-}
-
-#titre{
-	margin-top: 0%;
-	margin-left: 5%;
-	padding-top: 10%;
-	font-size: 1.8em;
 }
 
 .conteneur{
@@ -181,12 +152,12 @@ header{
 
 .restau_img3{
 	background-image: url("images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-	background-position: 0% -1300%;
+	background-position: 0% -350%;
 }
 
 .restau_img4{
 	background-image: url("images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
-	background-position: 0% 1300%;
+	background-position: 0% -500%;
 }
 
 .restau{
@@ -194,7 +165,7 @@ header{
 	display: flex;
 	width: 90%;
 	max-width: 400px;
-	height: 250px;
+	height: 240px;
 	border-radius: 25px;
 	margin-bottom: 5%;
 	background-size: 100%;
@@ -207,9 +178,28 @@ header{
 	}
 }
 
-#fav{
+.eti_nouveau{
 	position: absolute;
-	margin-top: 50%;
+	background-color: $terciaire-color;
+	right: 0;
+	top: 0;
+	margin-right: 5%;
+	margin-top: 5%;
+	padding-left: 3%;
+	padding-top: 2%;
+	padding-right: 3%;
+	padding-bottom: 2%;
+	border-radius: 0.2em;
+	p{
+		color:$eti_color_text;
+		margin: 0;
+	}
+}
+
+.fav{
+	position: absolute;
+	margin-bottom: 5%;
+	bottom: 0;
 	margin-right: 5%;
 	right: 0;
 	font-size: 2em;
@@ -306,7 +296,7 @@ footer li{
 	  }
 }
 
-  @keyframes show{
+@keyframes show{
 	0%{
 		z-index:100 ;
 		opacity: 1;
@@ -321,7 +311,7 @@ footer li{
 	}
   }
 
-  @keyframes spin {
+@keyframes spin {
 	0% {
 		transform: rotate(0deg); 
 	}
@@ -329,3 +319,11 @@ footer li{
 		transform: rotate(1080deg); 
 	}
   }
+
+@import "responsive_desktop";
+@import "responsive_tablette";
+@import "responsive_low_smartphone";
+@import "responsive_hight_smartphone";
+@import "responsive_medium_smartphone";
+
+

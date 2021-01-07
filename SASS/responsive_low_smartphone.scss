@@ -1,0 +1,149 @@
+@media screen and (min-width: 320px) and (max-width: 359px){
+    .localisation{
+        h2{
+            font-size: 0.8em;
+        }
+        i{
+            font-size: 0.9em;
+        }
+    }
+
+    .info{
+        h2{
+        font-size: 1em;
+        }
+        h3{
+        font-size: 0.8em;
+        }
+    }
+
+    .bouton_explo{
+        font-size: 0.8em;
+    }
+
+    .titre{
+        font-size: 1.3em;
+    }
+
+    .fonctio{
+        font-size: 1em;
+    }
+    
+    .chiffre{
+        font-size: 0.9;
+    }
+
+    .restau_img1{
+        background-position: 0% -500%;
+    }
+    
+    .restau_img3{
+        background-position: 0% -600%;
+    }
+    
+    .restau_img4{
+        background-position: 0% -1000%;
+    }
+    
+    .restau{
+        width: 90%;
+        max-width: 400px;
+        height: 200px;
+    }
+
+    #fav{
+        font-size: 1.5em;
+    }
+
+    .texte_restau{
+        h2{
+            font-size: 0.9em;
+        }
+        h3{
+            font-size: 0.9em;;
+        }
+    }
+
+    .menu{
+        margin-top: -10%;
+        h1{
+            font-size: 1.2em;
+        }
+        #fav{
+            font-size: 1.2em;
+            margin-top: 6%;
+        }
+    }
+
+    .image_restau1{
+        @include image_dimension;
+        background-image: url(images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+        height: 200px;
+        background-position: 0% 50%;
+    }
+
+    .image_restau2{
+        @include image_dimension;
+        background-image: url(images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+        background-position: 0%;
+    }
+
+    .image_restau3{
+        @include image_dimension;
+        background-image: url(images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+        background-position: 0% 0%;
+    }
+
+    .image_restau4{
+        @include image_dimension;
+        background-image: url(images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+        background-position: 0% 0%;
+    }
+
+    article{
+    h2{
+        font-size: 1em;
+        }
+    }
+
+    .section_plat{
+        border-radius: 0.7em;
+    }
+
+    .prix{
+        font-size: 0.8em;
+    }
+
+    .groupe_text{
+        h3{
+            margin-top:3%;
+            margin-bottom: 1%;
+            font-size: 0.8em;
+        }
+        h4{
+            margin-top:1%;
+            margin-bottom: 3%;
+            font-size: 0.65em;
+        }
+    }
+
+    .effet_valid{
+        border-top-right-radius: 0.7em;
+        border-bottom-right-radius: 0.7em;
+        i{
+           font-size: 0.8em;
+        }
+    }
+
+    .bouton_commande{
+        font-size: 1em;
+    }
+
+    .loader_conteneur{
+        .loader {
+            margin-left: 28%;
+            margin-top: 50%;
+          }
+    }
+
+}
