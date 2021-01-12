@@ -1,5 +1,5 @@
 {
-  "name": "projet-3",
+  "name": "c",
   "version": "1.0.0",
   "main": "index.html",
   "scripts": {
@@ -7,5 +7,13 @@
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrancoisGX/FrancoisBourhis_3_03122020.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FrancoisGX/FrancoisBourhis_3_03122020/issues"
+  },
+  "homepage": "https://github.com/FrancoisGX/FrancoisBourhis_3_03122020#readme"
 }

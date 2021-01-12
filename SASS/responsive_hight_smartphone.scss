@@ -1,0 +1,83 @@
+@media screen and (min-width: 400px) and (max-width: 420px){
+    .localisation{
+        h2{
+            font-size: 1.2em;
+        }
+        i{
+            font-size: 1.3em;
+        }
+    }
+
+    .info{
+        h2{
+        font-size: 1.6em;
+        }
+        h3{
+        font-size: 1.3em;
+        }
+    }
+
+    .bouton_explo{
+        font-size: 1.3em;
+    }
+
+    .titre{
+        font-size: 1.6em;
+    }
+
+    .fonctio{
+        font-size: 1.2em;
+    }
+    
+    .chiffre{
+        padding-top: 0%;
+        font-size: 0.9em;
+        width: 23px;
+    }
+
+    .restau_img1{
+        background-position: 0% -215%;
+    }
+    
+    .restau_img3{
+        background-position: 0% -200%;
+    }
+    
+    .restau_img4{
+        background-position: 0% -300%;
+    }
+    
+    .restau{
+        width: 90%;
+        max-width: 400px;
+        height: 275px;
+    }
+
+    .fav{
+        font-size: 2em;
+    }
+
+    .texte_restau{
+        .nom_restau{
+            font-size: 1.3em;
+        }
+        .sous-titre_restau{
+            font-size: 1.3em;
+        }
+    }
+
+    .groupe_text{
+        .titre_plat{
+            font-size: 1em;
+        }
+        .descri_plat{
+            font-size: 0.8em;
+        }
+    }
+
+    .effet_valid{
+        i{
+           font-size: 0.8em;
+        }
+    }
+}

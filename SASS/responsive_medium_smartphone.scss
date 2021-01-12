@@ -1,0 +1,104 @@
+@media screen and (min-width: 350px) and (max-width: 400px){
+    .localisation{
+        h2{
+            font-size: 1em;
+        }
+        i{
+            font-size: 1.1em;
+        }
+    }
+
+    .info{
+        h2{
+        font-size: 1.3em;
+        }
+        h3{
+        font-size: 1em;
+        }
+    }
+
+    .bouton_explo{
+        font-size: 1em;
+    }
+
+    .titre{
+        font-size: 1.3em;
+    }
+
+    .fonctio{
+        font-size: 1em;
+    }
+    
+    .chiffre{
+        padding-top: 1%;
+        font-size: 0.9em;
+        width: 23px;
+        height: 20px;
+    }
+
+    .restau_img1{
+        background-position: 0% -400%;
+    }
+    
+    .restau_img3{
+        background-position: 0% -200%;
+    }
+    
+    .restau_img4{
+        background-position: 0% -500%;
+    }
+    
+    .restau{
+        width: 90%;
+        max-width: 400px;
+        height: 230px;
+    }
+
+    .fav{
+        font-size: 1.8em;
+    }
+
+    .texte_restau{
+        .nom_restau{
+            font-size: 1em;
+        }
+        .sous-titre_restau{
+            font-size: 1em;
+        }
+    }
+
+    article{
+        h2{
+            font-size: 1em;
+            }
+        }
+    
+        .section_plat{
+            border-radius: 0.7em;
+        }
+    
+        .prix{
+            font-size: 0.8em;
+        }
+    
+        .groupe_text{
+            .titre_plat{
+                font-size: 0.9em;
+            }
+            .descri_plat{
+                font-size: 0.7em;
+            }
+        }
+    
+        .effet_valid{
+            border-top-right-radius: 0.7em;
+            border-bottom-right-radius: 0.7em;
+            i{
+               font-size: 0.8em;
+            }
+        }
+    
+        .bouton_commande{
+            font-size: 1em;
+        }
+}
