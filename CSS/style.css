@@ -110,7 +110,6 @@ article h2 {
   margin-bottom: 5%;
   margin-left: 5%;
   margin-right: 5%;
-  width: 90%;
   border: none;
   background-color: white;
   color: black;
@@ -124,7 +123,7 @@ article h2 {
   opacity: 0%;
 }
 .section_plat:hover {
-  background-color: none;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 .section_plat:hover .effet_valid {
   transform: translatex(20%);
@@ -211,6 +210,10 @@ article h2 {
   box-shadow: 5px 5px 10px #B4B4B4;
   outline: 0;
   cursor: pointer;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
   margin-top: 10%;
   margin-bottom: 25%;
   margin-left: 25%;
@@ -230,7 +233,7 @@ body {
   margin: auto;
   position: relative;
 }
-body h2, body h3, body h4, body p {
+body h2, body h3, body h4, body .fonctio, body .text_bouton_explo, body .section_plat {
   font-family: "roboto";
 }
 body h1 {
@@ -276,6 +279,7 @@ header i {
 
 .info {
   padding-top: 5%;
+  padding-bottom: 8%;
   text-align: center;
   background-color: #F6F6F6;
 }
@@ -300,11 +304,16 @@ header i {
   box-shadow: 5px 5px 10px #B4B4B4;
   outline: 0;
   cursor: pointer;
-  font-size: 1.2em;
-  margin-top: 5%;
-  margin-bottom: 13%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   padding-left: 5%;
   padding-right: 5%;
+  font-size: 1.2em;
+  margin-top: 8%;
+  margin-bottom: 8%;
+  margin-left: 12%;
+  margin-right: 12%;
+  width: auto;
 }
 
 .titre {
@@ -320,7 +329,6 @@ header i {
   margin-bottom: 5%;
   margin-left: 5%;
   margin-right: 5%;
-  width: 90%;
   border: none;
   background-color: #F6F6F6;
   color: black;
@@ -331,8 +339,8 @@ header i {
   display: flex;
   padding-left: 50px;
   padding-right: 50px;
-  padding-top: 0%;
-  padding-bottom: 0%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 .fonctio:hover {
   background-color: #F5EDFF;
@@ -341,6 +349,7 @@ header i {
   position: absolute;
   left: 0;
   margin-left: 0%;
+  margin-top: -6%;
   padding-top: 6%;
   padding-bottom: 6%;
   padding-left: 10%;
@@ -351,9 +360,9 @@ header i {
 }
 
 .chiffre {
-  padding-top: 1%;
   margin-left: -60px;
   margin-right: 25%;
+  text-align: center;
   border-style: none;
   border-radius: 1em;
   height: 22px;
@@ -447,10 +456,10 @@ header i {
 }
 .fa-heart:hover {
   background-image: -webkit-linear-gradient(#FF79DA, #9356DC);
-  color: transparent;
-  -webkit-background-clip: text;
   -webkit-text-stroke-color: white;
   background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .texte_restau {
@@ -461,12 +470,13 @@ header i {
   width: 100%;
   height: 31%;
 }
-.texte_restau h2 {
+.texte_restau .nom_restau {
   margin-left: 20px;
-  font-size: 1.2em;
+  font-size: 5em;
   margin-top: 4%;
+  font-weight: bolder;
 }
-.texte_restau h3 {
+.texte_restau .sous-titre_restau {
   margin-left: 20px;
   font-size: 1.1em;
   font-weight: normal;
@@ -550,7 +560,7 @@ footer li a {
     transform: rotate(1080deg);
   }
 }
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1400px) {
   header .logo img {
     width: 10%;
     height: 5%;
@@ -569,26 +579,26 @@ footer li a {
     padding-right: 0%;
   }
   .localisation h2 {
-    font-size: 1em;
+    font-size: 1.3em;
   }
   .localisation i {
-    padding-right: 2%;
+    padding-right: 1%;
     padding-top: 1%;
-    font-size: 1.2em;
+    font-size: 1.5em;
   }
 
   .info {
     padding-top: 1%;
   }
   .info h2 {
-    font-size: 1.1em;
+    font-size: 1.5em;
   }
   .info h3 {
-    font-size: 0.9em;
+    font-size: 1.4em;
   }
 
   .bouton_explo {
-    font-size: 0.9em;
+    font-size: 1.4em;
     margin-top: 1%;
     margin-bottom: 3%;
     padding-left: 3%;
@@ -604,29 +614,27 @@ footer li a {
     margin-top: 0%;
     margin-left: 5%;
     padding-top: 1%;
-    font-size: 1.3em;
+    font-size: 1.5em;
   }
 
   .fonctio {
     width: 25%;
     display: flex;
-    padding-top: 0%;
-    padding-bottom: 0%;
-    font-size: 1em;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 1.1em;
   }
   .fonctio i {
     margin-left: 5%;
-    padding-top: 13%;
     padding-bottom: 13%;
   }
 
   .chiffre {
     padding-top: 1%;
-    margin-top: 20%;
-    margin-right: 45%;
+    margin-right: 30%;
     border-radius: 10em;
-    height: 20px;
-    width: 30px;
+    height: 23px;
+    width: 25px;
   }
 
   .conteneur {
@@ -637,31 +645,32 @@ footer li a {
 
   .restau {
     width: 100%;
-    max-width: 275px;
-    height: 185px;
+    max-width: 425px;
+    height: 275px;
     border-radius: 1em;
+    font-size: 1.2em;
   }
 
   .restau_img1 {
-    background-position: 0% -2000%;
+    background-position: 0% 100%;
   }
 
   .restau_img3 {
-    background-position: 0% -2500%;
+    background-position: 0% 500%;
   }
 
   .restau_img4 {
-    background-position: 0% 1500%;
+    background-position: 0% 500%;
   }
 
   .fav {
     font-size: 1.5em;
   }
 
-  .texte_restau h2 {
+  .texte_restau .nom_restau {
     font-size: 1em;
   }
-  .texte_restau h3 {
+  .texte_restau .sous-titre_restau {
     font-size: 0.8em;
   }
 
@@ -735,7 +744,7 @@ footer li a {
   .menu .fav {
     grid-column: 3;
     grid-row: 1;
-    font-size: 4em;
+    font-size: 3em;
   }
 
   .entree {
@@ -774,6 +783,9 @@ footer li a {
     transform: translatex(-400%);
   }
 
+  .effet_valid {
+    font-size: 1.3em;
+  }
   .effet_valid i {
     transition: all 1s ease-out;
   }
@@ -800,16 +812,12 @@ footer li a {
     text-overflow: ellipsis;
     transition: all 1.1s ease-out;
   }
-  .groupe_text h3 {
-    margin-top: 3%;
-    margin-bottom: 1%;
+  .groupe_text .titre_plat {
     font-size: 0.95em;
     font-weight: bold;
     text-overflow: ellipsis;
   }
-  .groupe_text h4 {
-    margin-top: 1%;
-    margin-bottom: 3%;
+  .groupe_text .descri_plat {
     font-size: 0.75em;
     font-weight: lighter;
     text-overflow: ellipsis;
@@ -823,6 +831,10 @@ footer li a {
     box-shadow: 5px 5px 10px #B4B4B4;
     outline: 0;
     cursor: pointer;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
     margin-top: 10%;
     margin-bottom: 25%;
     margin-left: 25%;
@@ -830,44 +842,50 @@ footer li a {
     font-size: 1em;
   }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 2400px) {
   .fonctio {
     width: 25%;
-    font-size: 1em;
+    font-size: 1.5em;
   }
   .fonctio i {
     margin-left: 0%;
-    padding-top: 5%;
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 
   .chiffre {
-    padding-top: 1%;
-    margin-top: 8%;
-    margin-right: 35%;
-    height: 18px;
-    width: 20px;
-    font-size: 0.8em;
+    height: 30px;
+    width: 30px;
+    font-size: 1em;
+    padding-top: 0%;
   }
 
   .restau {
     width: 100%;
-    max-width: 375px;
-    height: 250px;
+    max-width: 550px;
+    height: 350px;
   }
 
   .restau_img1 {
-    background-position: 0% 1000%;
+    background-position: 0% 150%;
   }
 
   .restau_img4 {
-    background-position: 0% 1000%;
+    background-position: 0% 200%;
+  }
+
+  .texte_restau h2 {
+    font-size: 1.4em;
+  }
+  .texte_restau h3 {
+    font-size: 1.1em;
+  }
+
+  .fav {
+    font-size: 2em;
   }
 
   .effet_valid i {
     transition: all 1s ease-out;
-    margin-top: 30%;
-    font-size: 1.5em;
   }
 }
 @media screen and (min-width: 760px) and (max-width: 1079px) {
@@ -910,19 +928,15 @@ footer li a {
   }
 
   .fonctio {
-    padding-top: 0%;
-    padding-bottom: 0%;
     font-size: 2em;
   }
   .fonctio i {
     margin-left: 0%;
-    padding-top: 5%;
     padding-bottom: 6%;
   }
 
   .chiffre {
     padding-top: 0%;
-    margin-top: 5%;
     margin-right: 25%;
     border-radius: 10em;
     height: 30px;
@@ -958,10 +972,10 @@ footer li a {
     font-size: 2.5em;
   }
 
-  .texte_restau h2 {
+  .texte_restau .nom_restau {
     font-size: 1.2em;
   }
-  .texte_restau h3 {
+  .texte_restau .sous-titre_restau {
     font-size: 1.1em;
   }
 
@@ -1012,18 +1026,14 @@ footer li a {
     font-size: 2em;
   }
 
-  .prix {
+  .prix p {
     font-size: 1.5em;
   }
 
-  .groupe_text h3 {
-    margin-top: 3%;
-    margin-bottom: 1%;
+  .groupe_text .titre_plat {
     font-size: 1.5em;
   }
-  .groupe_text h4 {
-    margin-top: 1%;
-    margin-bottom: 3%;
+  .groupe_text .descri_plat {
     font-size: 1.25em;
   }
 
@@ -1039,6 +1049,10 @@ footer li a {
     box-shadow: 5px 5px 10px #B4B4B4;
     outline: 0;
     cursor: pointer;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
     margin-top: 10%;
     margin-bottom: 25%;
     margin-left: 25%;
@@ -1078,19 +1092,14 @@ footer li a {
   }
 
   .fonctio {
-    padding-top: 0%;
-    padding-bottom: 0%;
     font-size: 2.5em;
   }
   .fonctio i {
     margin-left: 0%;
-    padding-top: 5%;
     padding-bottom: 6%;
   }
 
   .chiffre {
-    padding-top: 0%;
-    margin-top: 5%;
     margin-right: 25%;
     border-radius: 10em;
     height: 48px;
@@ -1114,10 +1123,10 @@ footer li a {
     font-size: 3.5em;
   }
 
-  .texte_restau h2 {
+  .texte_restau .nom_restau {
     font-size: 1.9em;
   }
-  .texte_restau h3 {
+  .texte_restau .sous-titre_restau {
     font-size: 1.5em;
     margin-top: -4%;
   }
@@ -1126,8 +1135,19 @@ footer li a {
     margin-left: 40%;
     margin-top: 50%;
   }
+
+  .prix p {
+    font-size: 2em;
+  }
+
+  .groupe_text .titre_plat {
+    font-size: 2em;
+  }
+  .groupe_text .descri_plat {
+    font-size: 1.8em;
+  }
 }
-@media screen and (min-width: 320px) and (max-width: 359px) {
+@media screen and (min-width: 250px) and (max-width: 321px) {
   .localisation h2 {
     font-size: 0.8em;
   }
@@ -1151,11 +1171,13 @@ footer li a {
   }
 
   .fonctio {
-    font-size: 1em;
+    font-size: 0.95em;
   }
 
   .chiffre {
-    font-size: 0.9;
+    font-size: 0.95em;
+    height: 18px;
+    width: 20px;
   }
 
   .restau_img1 {
@@ -1180,10 +1202,10 @@ footer li a {
     font-size: 1.5em;
   }
 
-  .texte_restau h2 {
+  .texte_restau .nom_restau {
     font-size: 0.9em;
   }
-  .texte_restau h3 {
+  .texte_restau .sous-titre_restau {
     font-size: 0.9em;
   }
 
@@ -1240,17 +1262,16 @@ footer li a {
   }
 
   .prix {
-    font-size: 0.8em;
+    font-size: 0.6em;
+  }
+  .prix p {
+    margin-bottom: 0.5em;
   }
 
-  .groupe_text h3 {
-    margin-top: 3%;
-    margin-bottom: 1%;
+  .groupe_text .titre_plat {
     font-size: 0.8em;
   }
-  .groupe_text h4 {
-    margin-top: 1%;
-    margin-bottom: 3%;
+  .groupe_text .descri_plat {
     font-size: 0.65em;
   }
 
@@ -1259,7 +1280,7 @@ footer li a {
     border-bottom-right-radius: 0.7em;
   }
   .effet_valid i {
-    font-size: 0.8em;
+    font-size: 0.6em;
   }
 
   .bouton_commande {
@@ -1300,7 +1321,7 @@ footer li a {
 
   .chiffre {
     padding-top: 0%;
-    font-size: 0.9;
+    font-size: 0.9em;
     width: 23px;
   }
 
@@ -1326,11 +1347,22 @@ footer li a {
     font-size: 2em;
   }
 
-  .texte_restau h2 {
+  .texte_restau .nom_restau {
     font-size: 1.3em;
   }
-  .texte_restau h3 {
+  .texte_restau .sous-titre_restau {
     font-size: 1.3em;
+  }
+
+  .groupe_text .titre_plat {
+    font-size: 1em;
+  }
+  .groupe_text .descri_plat {
+    font-size: 0.8em;
+  }
+
+  .effet_valid i {
+    font-size: 0.8em;
   }
 }
 @media screen and (min-width: 350px) and (max-width: 400px) {
@@ -1361,9 +1393,9 @@ footer li a {
   }
 
   .chiffre {
-    padding-top: 0%;
-    font-size: 0.9;
-    width: 20px;
+    padding-top: 1%;
+    font-size: 0.9em;
+    width: 23px;
     height: 20px;
   }
 
@@ -1389,10 +1421,10 @@ footer li a {
     font-size: 1.8em;
   }
 
-  .texte_restau h2 {
+  .texte_restau .nom_restau {
     font-size: 1em;
   }
-  .texte_restau h3 {
+  .texte_restau .sous-titre_restau {
     font-size: 1em;
   }
 
@@ -1408,15 +1440,11 @@ footer li a {
     font-size: 0.8em;
   }
 
-  .groupe_text h3 {
-    margin-top: 3%;
-    margin-bottom: 1%;
-    font-size: 0.8em;
+  .groupe_text .titre_plat {
+    font-size: 0.9em;
   }
-  .groupe_text h4 {
-    margin-top: 1%;
-    margin-bottom: 3%;
-    font-size: 0.65em;
+  .groupe_text .descri_plat {
+    font-size: 0.7em;
   }
 
   .effet_valid {

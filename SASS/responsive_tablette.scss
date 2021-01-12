@@ -40,19 +40,15 @@
     }
 
         .fonctio{
-        padding-top: 0%; 
-        padding-bottom: 0%;
         font-size: 2em;
         i{
             margin-left: 0%;
-            padding-top: 5%;
             padding-bottom: 6%;
         }
     }
     
     .chiffre{
         padding-top: 0%;
-        margin-top: 5%;
         margin-right: 25%;
         border-radius: 10em;
         height: 30px;
@@ -89,10 +85,10 @@
     }
     
     .texte_restau{
-        h2{
+        .nom_restau{
             font-size: 1.2em;
         }
-        h3{
+        .sous-titre_restau{
             font-size: 1.1em;
         }
     }
@@ -139,18 +135,16 @@
     }
 
     .prix{
-        font-size: 1.5em;
+        p{
+            font-size: 1.5em;
+        }
     }
 
     .groupe_text{
-        h3{
-            margin-top:3%;
-            margin-bottom: 1%;
+        .titre_plat{
             font-size: 1.5em;
         }
-        h4{
-            margin-top:1%;
-            margin-bottom: 3%;
+        .descri_plat{
             font-size: 1.25em;
         }
     }
@@ -208,19 +202,14 @@
     }
 
     .fonctio{
-        padding-top: 0%; 
-        padding-bottom: 0%;
         font-size: 2.5em;
         i{
             margin-left: 0%;
-            padding-top: 5%;
             padding-bottom: 6%;
         }
     }
     
     .chiffre{
-        padding-top: 0%;
-        margin-top: 5%;
         margin-right: 25%;
         border-radius: 10em;
         height: 48px;
@@ -245,10 +234,10 @@
     }
     
     .texte_restau{
-        h2{
+        .nom_restau{
             font-size: 1.9em;
         }
-        h3{
+        .sous-titre_restau{
             font-size: 1.5em;
             margin-top: -4%;
         }
@@ -259,5 +248,20 @@
             margin-left: 40%;
             margin-top: 50%;
           }
+    }
+
+    .prix{
+        p{
+            font-size: 2em;
+        }
+    }
+
+    .groupe_text{
+        .titre_plat{
+            font-size: 2em;
+        }
+        .descri_plat{
+            font-size: 1.8em;
+        }
     }
 }

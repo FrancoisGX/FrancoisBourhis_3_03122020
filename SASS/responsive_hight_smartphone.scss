@@ -31,7 +31,7 @@
     
     .chiffre{
         padding-top: 0%;
-        font-size: 0.9;
+        font-size: 0.9em;
         width: 23px;
     }
 
@@ -58,11 +58,26 @@
     }
 
     .texte_restau{
-        h2{
+        .nom_restau{
             font-size: 1.3em;
         }
-        h3{
+        .sous-titre_restau{
             font-size: 1.3em;
+        }
+    }
+
+    .groupe_text{
+        .titre_plat{
+            font-size: 1em;
+        }
+        .descri_plat{
+            font-size: 0.8em;
+        }
+    }
+
+    .effet_valid{
+        i{
+           font-size: 0.8em;
         }
     }
 }

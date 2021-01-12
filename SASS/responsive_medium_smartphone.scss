@@ -30,9 +30,9 @@
     }
     
     .chiffre{
-        padding-top: 0%;
-        font-size: 0.9;
-        width: 20px;
+        padding-top: 1%;
+        font-size: 0.9em;
+        width: 23px;
         height: 20px;
     }
 
@@ -59,10 +59,10 @@
     }
 
     .texte_restau{
-        h2{
+        .nom_restau{
             font-size: 1em;
         }
-        h3{
+        .sous-titre_restau{
             font-size: 1em;
         }
     }
@@ -82,15 +82,11 @@
         }
     
         .groupe_text{
-            h3{
-                margin-top:3%;
-                margin-bottom: 1%;
-                font-size: 0.8em;
+            .titre_plat{
+                font-size: 0.9em;
             }
-            h4{
-                margin-top:1%;
-                margin-bottom: 3%;
-                font-size: 0.65em;
+            .descri_plat{
+                font-size: 0.7em;
             }
         }
     

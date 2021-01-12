@@ -3,7 +3,7 @@
 @mixin effet_slide{
     animation-name: slide;
     animation-duration: 0.75s;
-    animation-fill-mode: both
+    animation-fill-mode: both;
 }
 
 .effet{
@@ -113,7 +113,7 @@ article{
         transform: translatex(-150%);
     }
     &:hover .groupe_text{
-        width: 70%
+        width: 70%;
     }
 }
 
