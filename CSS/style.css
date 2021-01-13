@@ -233,7 +233,7 @@ body {
   margin: auto;
   position: relative;
 }
-body h2, body h3, body h4, body .fonctio, body .text_bouton_explo, body .section_plat {
+body h2, body h3, body h4, body p, body .fonctio, body .text_bouton_explo, body .section_plat {
   font-family: "roboto";
 }
 body h1 {
@@ -589,6 +589,7 @@ footer li a {
 
   .info {
     padding-top: 1%;
+    padding-bottom: 2%;
   }
   .info h2 {
     font-size: 1.5em;
@@ -599,10 +600,14 @@ footer li a {
 
   .bouton_explo {
     font-size: 1.4em;
-    margin-top: 1%;
-    margin-bottom: 3%;
+    margin-top: 2%;
+    margin-bottom: 0%;
+    margin-left: 41%;
+    margin-right: 41%;
     padding-left: 3%;
     padding-right: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
   }
 
   .fonctionnement {
@@ -873,10 +878,10 @@ footer li a {
     background-position: 0% 200%;
   }
 
-  .texte_restau h2 {
+  .texte_restau .nom_restau {
     font-size: 1.4em;
   }
-  .texte_restau h3 {
+  .texte_restau .sous-titre_restau {
     font-size: 1.1em;
   }
 

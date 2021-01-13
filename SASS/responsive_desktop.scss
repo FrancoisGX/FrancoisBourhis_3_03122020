@@ -29,6 +29,7 @@
 
     .info{
         padding-top: 1%;
+        padding-bottom: 2%;
         h2{
         font-size: 1.5em;
         }
@@ -39,10 +40,14 @@
 
     .bouton_explo{
         font-size: 1.4em;
-        margin-top: 1%;
-        margin-bottom: 3%;
+        margin-top: 2%;
+        margin-bottom: 0%;
+        margin-left: 41%;
+        margin-right: 41%;
         padding-left: 3%;
         padding-right: 3%;
+        padding-top: 1%;
+        padding-bottom: 1%;
     }
 
     .fonctionnement{
@@ -306,10 +311,10 @@
     }
 
     .texte_restau{
-        h2{
+        .nom_restau{
             font-size: 1.4em;
         }
-        h3{
+        .sous-titre_restau{
             font-size: 1.1em;
         }
     }
